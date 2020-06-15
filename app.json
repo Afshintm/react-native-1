@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "abc",
-    "slug": "abc",
+    "name": "abc-afshin",
+    "slug": "abc-afshin",
     "platforms": [
       "ios",
       "android",
@@ -23,6 +23,7 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": ""
   }
 }
