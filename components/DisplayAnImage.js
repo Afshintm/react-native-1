@@ -21,7 +21,7 @@ const DisplayAnImage = () => {
     <View style={styles.container}>
       <Image
         style={styles.tinyLogo}
-        source={require('@expo/snack-static/react-native-logo.png')}
+        source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}}
       />
     </View>
   );

@@ -5,7 +5,9 @@ import {
     StyleSheet,
     Button, 
     ScrollView,
-    Image
+    Image,
+    SafeAreaView, 
+    FlatList
 } from "react-native";
 function BrowseScreen({navigation}) {
   const images = [
@@ -19,7 +21,7 @@ function BrowseScreen({navigation}) {
         <Button
         title="Take Photo"
         onPress={() => navigation.navigate('TakePhoto')}/>
-        <ScrollView style={styles.container}>
+        {/* <ScrollView style={styles.container}>
           {
             images.forEach((i)=>{
               console.log(i.src);
@@ -27,8 +29,8 @@ function BrowseScreen({navigation}) {
 
           }
           
-        </ScrollView>
-        <Image src="../assets/splash.png"></Image>
+        </ScrollView> */}
+        <Image style={styles.tinyLogo} source={{uri: 'https://reactnative.dev/img/tiny_logo.png'}}></Image>
       </View>
     );
   }
@@ -51,6 +53,10 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     marginRight: 10,
     backgroundColor: 'steelblue',
+  },
+  tinyLogo: {
+    width: 100,
+    height: 100,
   },
 });
 
